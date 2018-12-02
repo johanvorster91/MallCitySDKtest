@@ -10,6 +10,10 @@
 		84A684DE21B036DF00B93810 /* MallCitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A684D421B036DF00B93810 /* MallCitySDK.framework */; };
 		84A684E321B036DF00B93810 /* MallCitySDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A684E221B036DF00B93810 /* MallCitySDKTests.m */; };
 		84A684E521B036DF00B93810 /* MallCitySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A684D721B036DF00B93810 /* MallCitySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A684F221B0372300B93810 /* MallAndCityHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A684EE21B0372200B93810 /* MallAndCityHttp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A684F321B0372300B93810 /* MallAndCityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A684EF21B0372200B93810 /* MallAndCityUtil.m */; };
+		84A684F421B0372300B93810 /* MallAndCityUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A684F021B0372300B93810 /* MallAndCityUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A684F521B0372300B93810 /* MallAndCityHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A684F121B0372300B93810 /* MallAndCityHttp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		84A684DD21B036DF00B93810 /* MallCitySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MallCitySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A684E221B036DF00B93810 /* MallCitySDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MallCitySDKTests.m; sourceTree = "<group>"; };
 		84A684E421B036DF00B93810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A684EE21B0372200B93810 /* MallAndCityHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallAndCityHttp.h; sourceTree = "<group>"; };
+		84A684EF21B0372200B93810 /* MallAndCityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallAndCityUtil.m; sourceTree = "<group>"; };
+		84A684F021B0372300B93810 /* MallAndCityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallAndCityUtil.h; sourceTree = "<group>"; };
+		84A684F121B0372300B93810 /* MallAndCityHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MallAndCityHttp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				84A684D721B036DF00B93810 /* MallCitySDK.h */,
+				84A684EE21B0372200B93810 /* MallAndCityHttp.h */,
+				84A684F121B0372300B93810 /* MallAndCityHttp.m */,
+				84A684F021B0372300B93810 /* MallAndCityUtil.h */,
+				84A684EF21B0372200B93810 /* MallAndCityUtil.m */,
 				84A684D821B036DF00B93810 /* Info.plist */,
 			);
 			path = MallCitySDK;
@@ -94,6 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A684E521B036DF00B93810 /* MallCitySDK.h in Headers */,
+				84A684F221B0372300B93810 /* MallAndCityHttp.h in Headers */,
+				84A684F421B0372300B93810 /* MallAndCityUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A684F521B0372300B93810 /* MallAndCityHttp.m in Sources */,
+				84A684F321B0372300B93810 /* MallAndCityUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = x86_64;
 			};
 			name = Debug;
 		};
